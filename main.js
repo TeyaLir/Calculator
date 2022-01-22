@@ -10,15 +10,12 @@ function calc(a, operator, b) {
   switch (operator) {
     case "+":
       return (a + b);
-      break;
 
     case "-":
       return (a - b);
-      break;
 
     case "*":
       return (a * b);
-      break;
 
     case "/":
       if (b === 0) {
@@ -26,7 +23,6 @@ function calc(a, operator, b) {
       } else {
         return (a / b);
       }
-      break;
 
     default:
       return ("Неизвестный оператор");

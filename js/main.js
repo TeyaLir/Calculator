@@ -22,6 +22,7 @@ function calc(a, operator, b) {
   }
 }
 
+
 console.log(calc(3, 'sum', 5));
 console.log(calc(10, 'sub', 6));
 console.log(calc(2, 'mult', 7));

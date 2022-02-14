@@ -5,12 +5,107 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <script src="main.js"></script>
+  <main class="main">
+
+    <form class="calc">
+      <input class="calc__result" type="text" name="result" placeholder="1,258.2">
+
+      <ul class="calc__list">
+        <li class="calc__item calc__item--clean">
+          <button class="calc__btn calc__btn--clean" type="reset">C</button>
+        </li>
+        
+        <li class="calc__item">
+          <button class="calc__btn" type="button">
+            <img class="calc__img" src="images/erase.svg" alt="стереть">
+          </button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn calc__btn--accent" type="button">
+            <img class="calc__img--operators" src="images/div.svg" alt="разделить">
+          </button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn" type="button">7</button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn" type="button">8</button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn" type="button">9</button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn calc__btn--accent" type="button">
+            <img class="calc__img--operators" src="images/mult.svg" alt="умножить">
+          </button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn" type="button">4</button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn" type="button">5</button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn" type="button">6</button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn calc__btn--accent" type="button">
+            <img class="calc__img--operators" src="images/sub.svg" alt="вычесть">
+          </button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn" type="button">1</button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn" type="button">2</button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn" type="button">3</button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn calc__btn--accent" type="button">
+            <img class="calc__img--operators" src="images/sum.svg" alt="сложить">
+          </button>
+        </li>
+
+        <li class="calc__item calc__item--zero">
+          <button class="calc__btn" type="button">0</button>
+        </li>
+
+        <li class="calc__item">
+          <button class="calc__btn calc__btn--accent" type="button">
+            <img class="calc__img--operators" src="images/equals.svg" alt="равно">
+          </button>
+        </li>
+      </ul>
+    </form>
+
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
